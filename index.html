@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="C.M.G. Construcciones Metálicas Guerrero - Fabricación, reparación y mantenimiento de muebles metálicos en La Ferroviaria, Quito.">
+  <title>C.M.G. Construcciones Metálicas Guerrero | Quito</title>
+  <style>
+    :root{
+      --bg:#0b0f14; --panel:#131a22; --panel2:#1a232d; --text:#f4f7fa;
+      --muted:#b7c0c9; --accent:#d7dde3; --line:#2a3540;
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(11,15,20,.95);border-bottom:1px solid var(--line)}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+    .logo{font-weight:900;letter-spacing:1px}
+    .logo span{display:block;font-size:12px;color:var(--muted);font-weight:500;letter-spacing:.5px}
+    .links{display:flex;gap:22px;font-size:14px}
+    .links a:hover{color:#fff;text-decoration:underline}
+    .hero{min-height:78vh;display:grid;place-items:center;background:
+      radial-gradient(circle at 75% 30%,rgba(255,255,255,.10),transparent 28%),
+      linear-gradient(135deg,#0b0f14 0%,#151d26 55%,#0b0f14 100%);
+    }
+    .hero-content{padding:80px 0}
+    .tag{display:inline-block;border:1px solid #44515d;padding:7px 12px;border-radius:999px;color:var(--muted);font-size:13px}
+    h1{font-size:clamp(40px,7vw,76px);line-height:1.02;margin:20px 0 18px;max-width:850px}
+    .hero p{font-size:20px;color:var(--muted);max-width:720px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:13px 20px;border-radius:8px;border:1px solid #596571;font-weight:700}
+    .btn.primary{background:#f0f3f5;color:#0b0f14;border-color:#f0f3f5}
+    .btn:hover{transform:translateY(-1px)}
+    section{padding:76px 0}
+    .section-title{font-size:36px;margin:0 0 10px}
+    .section-sub{color:var(--muted);margin:0 0 32px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px}
+    .card h3{margin-top:0}
+    .card p{color:var(--muted)}
+    .icon{font-size:28px;margin-bottom:12px}
+    .about{display:grid;grid-template-columns:1.2fr .8fr;gap:28px}
+    .highlight{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:28px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .photo{min-height:190px;border-radius:14px;border:1px dashed #596571;display:grid;place-items:center;text-align:center;padding:20px;color:var(--muted);background:linear-gradient(145deg,#171f28,#0e141b)}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+    @media(max-width:800px){
+      .links{display:none}.grid,.gallery,.about,.contact{grid-template-columns:1fr}
+      .hero{min-height:72vh}.hero-content{padding:55px 0}
+      section{padding:55px 0}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#inicio">C.M.G.<span>CONSTRUCCIONES METÁLICAS GUERRERO</span></a>
+      <div class="links">
+        <a href="#servicios">Servicios</a>
+        <a href="#productos">Productos</a>
+        <a href="#mantenimiento">Mantenimiento</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="container hero-content">
+    <span class="tag">La Ferroviaria · Quito</span>
+    <h1>Construimos en metal. Reparamos. Damos nueva vida.</h1>
+    <p>Fabricación de muebles metálicos, trabajos bajo pedido y mantenimiento con soldadura, reparación y pintura.</p>
+    <div class="buttons">
+      <a class="btn primary" href="https://wa.me/593992655243?text=Hola%20C.M.G.%2C%20quisiera%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">Solicitar cotización por WhatsApp</a>
+      <a class="btn" href="#productos">Ver productos</a>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="container">
+    <h2 class="section-title">Nuestros servicios</h2>
+    <p class="section-sub">Soluciones metálicas para hogares, negocios e instituciones.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">⚙️</div><h3>Fabricación</h3><p>Muebles metálicos y estructuras fabricadas según las necesidades y medidas del cliente.</p></article>
+      <article class="card"><div class="icon">🔧</div><h3>Reparación</h3><p>Reparamos estructuras y muebles metálicos dañados, desgastados o deteriorados.</p></article>
+      <article class="card"><div class="icon">🎨</div><h3>Restauración y pintura</h3><p>Soldadura, preparación de superficies y repintado para recuperar la apariencia y funcionalidad.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="productos">
+  <div class="container">
+    <h2 class="section-title">Productos</h2>
+    <p class="section-sub">Fabricamos diferentes tipos de muebles metálicos.</p>
+    <div class="grid">
+      <article class="card"><h3>Escritorios</h3><p>Soluciones resistentes para oficinas, talleres y negocios.</p></article>
+      <article class="card"><h3>Archivadores</h3><p>Almacenamiento metálico para documentos y herramientas.</p></article>
+      <article class="card"><h3>Vitrinas</h3><p>Fabricación de vitrinas metálicas según el espacio y uso.</p></article>
+      <article class="card"><h3>Estanterías</h3><p>Estanterías resistentes para almacenamiento y exhibición.</p></article>
+      <article class="card"><h3>Camas metálicas</h3><p>Fabricación de camas y estructuras metálicas.</p></article>
+      <article class="card"><h3>Puertas</h3><p>Puertas y trabajos metálicos personalizados.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="mantenimiento">
+  <div class="container">
+    <div class="about">
+      <div>
+        <h2 class="section-title">Mantenimiento metálico</h2>
+        <p class="section-sub">¿Tu mueble está oxidado, roto o necesita una nueva pintura?</p>
+        <p>En C.M.G. podemos evaluar el estado de tu mueble o estructura y realizar trabajos de soldadura, reparación, preparación y pintura.</p>
+        <a class="btn primary" href="https://wa.me/593992655243?text=Hola%20C.M.G.%2C%20necesito%20mantenimiento%20o%20reparaci%C3%B3n." target="_blank" rel="noopener">Consultar mantenimiento</a>
+      </div>
+      <div class="highlight">
+        <h3>Atención en Quito</h3>
+        <p>📍 Sector La Ferroviaria</p>
+        <p>📲 WhatsApp: <strong>099 265 5243</strong></p>
+        <p>Solicita una cotización y cuéntanos qué necesitas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="container">
+    <h2 class="section-title">Galería</h2>
+    <p class="section-sub">Esta sección está preparada para colocar fotografías reales de tus trabajos.</p>
+    <div class="gallery">
+      <div class="photo">📷<br>Escritorios y muebles metálicos</div>
+      <div class="photo">📷<br>Archivadores y estanterías</div>
+      <div class="photo">📷<br>Trabajos de soldadura</div>
+      <div class="photo">📷<br>Restauración y pintura</div>
+      <div class="photo">📷<br>Puertas metálicas</div>
+      <div class="photo">📷<br>Trabajos bajo pedido</div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <h2 class="section-title">Contacto</h2>
+    <p class="section-sub">Cuéntanos qué necesitas y te orientamos para preparar tu cotización.</p>
+    <div class="contact">
+      <div class="card">
+        <h3>C.M.G. Construcciones Metálicas Guerrero</h3>
+        <p>📍 La Ferroviaria, Quito</p>
+        <p>📲 099 265 5243</p>
+        <a class="btn primary" href="https://wa.me/593992655243?text=Hola%20C.M.G.%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios." target="_blank" rel="noopener">Abrir WhatsApp</a>
+      </div>
+      <div class="card">
+        <h3>Solicita tu cotización</h3>
+        <p>Para cotizar más rápido, envíanos por WhatsApp:</p>
+        <p>• Qué producto necesitas<br>• Medidas aproximadas<br>• Cantidad<br>• Sector de entrega<br>• Una foto o referencia, si tienes</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© 2026 C.M.G. Construcciones Metálicas Guerrero · La Ferroviaria, Quito</div>
+</footer>
+</body>
+</html>
